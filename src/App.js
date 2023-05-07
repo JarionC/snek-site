@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import HomePage from './components/home';
 import NavBar from './components/nav';
-import BottomBar from './components/bottom'
+import BottomBar from './components/bottom';
 
 function App() {
   return (
