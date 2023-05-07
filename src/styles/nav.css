@@ -1,0 +1,73 @@
+.nav-container{
+    position:fixed;
+    top: 0px;
+    height:60px;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    background-color: #FBEC21;
+}
+
+.logo-container{
+    margin-right:auto;
+    margin-left: 20px;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.social-container{
+    margin-left:auto;
+    display:flex;
+    flex-direction: row;
+    padding-right:20px;
+}
+.twitter-link{
+    margin-left:auto;
+    display: inline-flex;
+}
+.twitter-container{
+    background-image: url('../img/twitter.png');
+    background-size:80%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100%;
+    width:60px;
+    transition: all .2s ease-in-out;
+}
+
+.twitter-container:hover{
+    height:65px;
+    width:65px;
+    transition: all .2s ease-in-out;
+}
+
+.telegram-link{
+    margin-left:auto;
+    display: inline-flex;
+}
+.telegram-container{
+    background-image: url('../img/telegram.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100%;
+    width:60px;
+    transition: all .2s ease-in-out;
+}
+
+.telegram-container:hover{
+    height:65px;
+    width:65px;
+    transition: all .2s ease-in-out;
+}
+
+.logo-box{
+    border-radius: 100%;
+    border : 2px solid black;    
+    background-image: url('../img/sneklogo.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:60px;
+    width:60px;
+}

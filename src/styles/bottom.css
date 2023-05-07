@@ -1,0 +1,15 @@
+.bottom-container{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #FBEC21;
+}
+
+.bottom-text{
+    height:40px;
+    color:black;
+    background-color:transparent;
+    font-size:1em;
+}

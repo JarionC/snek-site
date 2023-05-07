@@ -1,0 +1,107 @@
+.container {
+    width: 100%;
+    height:100vh;
+    background-color: #FBEC21;
+}
+
+.intro {
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: row;
+}
+
+.media-container{
+    display:flex;
+    flex-direction:column;
+    flex: 0 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-btn{
+    padding: 4px;
+    cursor: pointer;
+    background-color: rgba(120, 120, 120, 0.2);
+    border: 2px black solid;
+    border-radius: 5px;    
+    color:black;
+    font-weight:bold;
+    font-size:1em;
+    margin-top: 20px;
+}
+
+.second-btn{
+    padding: 4px;
+    cursor: pointer;
+    background-color: rgba(120, 120, 120, 0.2);
+    border: 2px black solid;
+    border-radius: 5px;    
+    color:black;
+    font-weight:bold;
+    font-size:1em;
+    margin-top: 20px;
+}
+
+.main-img{
+    width:50%;
+    min-height: 40%;
+    background-image: url('../img/sneklogo.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    border: none;
+}
+
+.text-container{
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    flex: 0 50%;
+    padding-top:100px;
+}
+
+.text-container > .title{
+    font-size: 2em;
+    font-weight: 700;
+    width:80%;
+
+}
+
+.text-container > .body{
+    margin-top: 20px;
+    font-size: .8em;
+    max-width:80%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        height:auto;
+        padding-bottom:50px;
+    }
+    .intro{
+        padding-top:50px;
+        flex-direction: column;
+        height:auto;
+    }
+
+    .text-container{
+        padding-top:0px;
+        text-align: center;
+    }
+
+    .text-container > .body {
+        width:80%;
+    }
+
+    .media-container{
+        height: 400px;
+        flex : 0 400px;
+    }
+
+}
