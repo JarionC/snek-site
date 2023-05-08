@@ -5,6 +5,8 @@
     align-items: center;
     justify-content: center;
     background-color: #FBEC21;
+    position:relative;
+    bottom:0px;
 }
 
 .bottom-text{

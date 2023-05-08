@@ -1,7 +1,11 @@
+.wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #FBEC21;
+}
 .container {
     width: 100%;
     height:100vh;
-    background-color: #FBEC21;
 }
 
 .intro {
@@ -75,7 +79,92 @@
     margin-top: 20px;
     font-size: .8em;
     max-width:80%;
+}
 
+
+.container-two {
+    background-image: url(../img/home-img-2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom:100px;
+}
+
+.container-two, .container-three {
+    height:auto;
+    width: 100%;
+    padding-top:30px;
+    padding-bottom:70px;
+}
+
+.inner-two, .inner-three{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+
+.roadmap-section {
+    border : 2px solid black;
+    border-radius : 5px;
+    width: 300px;
+    max-height: 400px;
+    text-align:left;
+    padding-left: 5px;
+    padding-right:5px;
+    font-weight:500;
+    background-color: #FBEC21;
+}
+
+.roadmap-section.one {
+    
+}
+
+.roadmap-section.two {
+    
+}
+
+.roadmap-section.three {
+    
+}
+
+.roadmap-title {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.roadmap-list {
+    font-size: 1em;
+}
+
+.roadmap-list-item {
+
+}
+.title-two{
+    margin-bottom: 90px;
+}
+.title-two, .title-three{
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 90px;
+}
+
+.token-snek-one {
+    background-image:url('../img/snekhead1.png');
+    background-size:cover;
+    width:400px;
+    height:400px;
+}
+
+.token-snek-two {
+    background-image:url('../img/snekhead2.png');
+    background-size:cover;
+    width: 400px;
+    height: 400px;
 }
 
 
@@ -104,4 +193,39 @@
         flex : 0 400px;
     }
 
+    .container-two{
+    }
+
+    .inner-two{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .inner-three {
+        flex-wrap:nowrap;
+    }
+
+    .roadmap-section{
+        margin-bottom:20px;
+    }
+    .roadmap-section.token{
+        flex: 1 100%;
+        margin-right:5px;
+        margin-left:5px;
+    }
+
+    .token-snek-one{
+        background-position: left;
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+
+    .token-snek-two{
+        background-position: right;
+        background-size:contain;
+        background-repeat: no-repeat;
+
+    }
 }
