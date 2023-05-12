@@ -79,6 +79,49 @@ class HomePage extends Component {
             </div>
         </div>
 
+        <div className="container-four">
+            <div className="title-four">
+                How To Buy
+            </div>
+            <div className="buy-steps-container">
+                <div className="buy-step">
+                    <div className="step-title">
+                        1. Setup Your Wallet
+                    </div>
+                    <div className="step-body">
+                    Start by downloading a crypto wallet. MetaMask or Trust Wallet are great choices and they work well with Binance Smart Chain. They're up for grabs on both App Store and Google Play. If you're on a desktop, the MetaMask Chrome extension from MetaMask.io is the way to go.
+                    </div>
+                </div>
+                <div className="buy-step">
+                    <div className="step-title">
+                        2. Stock Up on BNB
+                    </div>
+                    <div className="step-body">
+                    To get $SNEK, you'll need BNB in your wallet. You can pick up BNB directly in MetaMask, transfer from another wallet, or buy on an exchange and transfer it to your wallet. Don't forget, you need to be on the Binance Smart Chain network.
+                    </div>
+                </div>
+                <div className="buy-step">
+                    <div className="step-title">
+                        3. Connect to PancakeSwap
+                    </div>
+                    <div className="step-body">
+                    You can link up directly to PancakeSwap. We've embedded PancakeSwap right here to make things easier and get you straight to buying $SNEK. If you're using a different browser, just make sure you're on the official PancakeSwap site, select the token, and paste in the official $SNEK token address: ___.
+                    </div>
+                </div>
+                <div className="buy-step">
+                    <div className="step-title">
+                        4. Swap BNB for $SNEK
+                    </div>
+                    <div className="step-body">
+                    Once you've got your BNB, you can swap it for $SNEK. Just remember to keep enough BNB for those gas fees. Check the transaction details, and when you're ready, hit confirm. And just like that, you're part of the $SNEK family! Welcome to the journey towards financial freedom.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
 
         <div className="container-three">
                 <div className="title-three">
@@ -87,7 +130,7 @@ class HomePage extends Component {
                 <div className="inner-three">
                     <div className="token-snek-one"></div>
                     <div className="roadmap-section token">
-                        <ul className="roadmap-list">
+                        <ul className="roadmap-list tokenomics">
                             <li className="roadmap-list-item">No Taxes - Need we say more?</li>
                             <li className="roadmap-list-item">92% of tokens will be sent to liquidity.</li>
                             <li className="roadmap-list-item">8% of tokens will be held in a multi-sig wallet to be used for future CEX exchange listings, bridges, and liquidity pools.</li>

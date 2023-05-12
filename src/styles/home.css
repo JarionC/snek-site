@@ -50,7 +50,7 @@
 .main-img{
     width:50%;
     min-height: 40%;
-    background-image: url('../img/sneklogo.png');
+    background-image: url('../img/snek_logo.png');
     background-size:contain;
     background-repeat: no-repeat;
     background-position:center;
@@ -72,6 +72,7 @@
     font-size: 2em;
     font-weight: 700;
     width:80%;
+    font-family:cursive;
 
 }
 
@@ -79,6 +80,7 @@
     margin-top: 20px;
     font-size: .8em;
     max-width:80%;
+    font-family: sans-serif;
 }
 
 
@@ -90,11 +92,17 @@
     margin-bottom:100px;
 }
 
-.container-two, .container-three {
+.container-two, .container-four{
     height:auto;
     width: 100%;
     padding-top:30px;
     padding-bottom:70px;
+}
+.container-three{
+    height:auto;
+    width: 100%;
+    padding-top:30px;
+    padding-bottom:120px;
 }
 
 .inner-two, .inner-three{
@@ -102,8 +110,14 @@
     height:auto;
     display:flex;
     flex-direction: row;
-    justify-content: space-evenly;
 
+}
+.inner-two{
+    justify-content: space-evenly;
+}
+
+.inner-three{
+    justify-content: space-between;
 }
 
 
@@ -120,6 +134,9 @@
     background-color: #FBEC21;
 }
 
+
+
+
 .roadmap-section.one {
     
 }
@@ -135,22 +152,64 @@
 .roadmap-title {
     font-size: 1.5em;
     font-weight: 700;
+    font-family:cursive;
 }
 
 .roadmap-list {
     font-size: 1em;
+    font-family: sans-serif;
 }
 
 .roadmap-list-item {
+    margin : 10px 0;
+}
+
+.roadmap-list.tokenomics{
+    font-size: 1.3em;
+    overflow:hidden;
 
 }
 .title-two{
     margin-bottom: 90px;
+    font-family:cursive;
 }
-.title-two, .title-three{
+.title-two, .title-three, .title-four{
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 90px;
+    font-family:cursive;
+}
+
+.buy-steps-container{
+    width: 100%;
+    padding-left:30px;
+    padding-right:30px;
+    box-sizing: border-box;
+}
+
+.buy-step{
+    width: 100%;
+    background-color: #fbec21ba;
+    border-radius: 10px;
+    box-shadow: 5px 2px 2px rgb(0, 0, 0, .5);
+    border: 3px solid #555;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom:30px;
+}
+
+.step-title{
+    font-weight:600;
+    margin-bottom:10px;
+    font-size:1.3em;
+    font-family:cursive;
+}
+
+.step-body{
+    font-weight: 400;
+    font-size: 1.2em;
+    font-family: sans-serif;
 }
 
 .token-snek-one {
@@ -158,6 +217,9 @@
     background-size:cover;
     width:400px;
     height:400px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
 }
 
 .token-snek-two {
@@ -165,6 +227,14 @@
     background-size:cover;
     width: 400px;
     height: 400px;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
+
+
+.roadmap-section.token{
+    overflow:hidden;
 }
 
 
@@ -186,6 +256,7 @@
 
     .text-container > .body {
         width:80%;
+        font-family: sans-serif;
     }
 
     .media-container{
@@ -214,6 +285,7 @@
         flex: 1 100%;
         margin-right:5px;
         margin-left:5px;
+        overflow:hidden;
     }
 
     .token-snek-one{
@@ -227,5 +299,9 @@
         background-size:contain;
         background-repeat: no-repeat;
 
+    }
+    
+    .roadmap-list.tokenomics{
+        font-size: 1em;
     }
 }
