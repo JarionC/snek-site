@@ -1,7 +1,24 @@
+@font-face {
+    font-family: 'Sans Comic Sans';
+    src: url('../fonts/comic.ttf');
+    /* Add more src declarations for different font file formats if needed */
+    /* e.g., src: url('font.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Sans Comic Sans Bold';
+    src: url('../fonts/comicbold.ttf');
+    /* Add more src declarations for different font file formats if needed */
+    /* e.g., src: url('font.woff') format('woff'); */
+    font-weight: normal;
+    font-style: normal;
+  }
 .wrapper {
     width: 100%;
     height: auto;
-    background-color: #FBEC21;
+    background-color: #FFFF00;
 }
 .container {
     width: 100%;
@@ -24,10 +41,54 @@
 }
 
 .main-btn{
-    padding: 4px;
+    padding: 6px;
+    cursor: pointer;
+    /*background-color: rgba(47, 192, 244, 0.8);  */  
+    background-color: rgba(120, 120, 120, 0.2);
+    box-shadow: 2px 1px 1px rgb(0, 0, 0, .5);
+    border-radius: 5px;    
+    color:black;
+    font-weight:bold;
+    font-size:1em;
+    margin-top: 20px;
+    transition: all .2s ease-in-out;
+    display:flex;
+    flex-direction:row;
+}
+
+.pancake-img{
+    background-image: url('../img/bunny-color.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    justify-self: center;
+    display:flex;
+    align-self: center;
+    height:20px;
+    width:20px;
+    margin-right:5px;
+
+}
+
+.main-btn:hover{  
+    /*background-color: rgba(47, 192, 244, 0.7);  */
+    background-color: rgba(120, 120, 120, 0.16);
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, .5);
+    transition: all .1s ease-in-out;
+}
+
+.main-btn:active{  
+    /*background-color: rgba(47, 192, 244, 0.9);*/  
+    background-color: rgba(120, 120, 120, 0.22);  
+    box-shadow: 1px 0px 0px rgb(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+}
+
+.second-btn{
+    padding: 6px;
     cursor: pointer;
     background-color: rgba(120, 120, 120, 0.2);
-    border: 2px black solid;
+    box-shadow: 2px 1px 1px rgb(0, 0, 0, .5);
     border-radius: 5px;    
     color:black;
     font-weight:bold;
@@ -35,16 +96,17 @@
     margin-top: 20px;
 }
 
-.second-btn{
-    padding: 4px;
-    cursor: pointer;
-    background-color: rgba(120, 120, 120, 0.2);
-    border: 2px black solid;
-    border-radius: 5px;    
-    color:black;
-    font-weight:bold;
-    font-size:1em;
-    margin-top: 20px;
+.second-btn:hover{
+    background-color: rgba(120, 120, 120, 0.16);
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+
+}
+
+.second-btn:active{  
+    background-color: rgba(120, 120, 120, 0.22);  
+    box-shadow: 1px 0px 0px rgb(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
 }
 
 .main-img{
@@ -65,22 +127,25 @@
     justify-content: center;
     align-items: center;
     flex: 0 50%;
-    padding-top:100px;
+    margin-right: 150px;
 }
 
 .text-container > .title{
     font-size: 2em;
     font-weight: 700;
     width:80%;
-    font-family:cursive;
+    font-family: 'Sans Comic Sans', sans-serif;
 
 }
 
 .text-container > .body{
     margin-top: 20px;
-    font-size: .8em;
+    font-size: 1em;
     max-width:80%;
     font-family: sans-serif;
+    text-align:justify;
+    word-spacing: -2px;
+    line-height:1.2em;
 }
 
 
@@ -88,8 +153,10 @@
     background-image: url(../img/home-img-2.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
+    background-position: 0px 100px;
     margin-bottom:100px;
+    display:flex;
+    flex-direction:column;
 }
 
 .container-two, .container-four{
@@ -97,12 +164,16 @@
     width: 100%;
     padding-top:30px;
     padding-bottom:70px;
+    display:flex;
+    flex-direction:column;
 }
 .container-three{
     height:auto;
     width: 100%;
     padding-top:30px;
     padding-bottom:120px;
+    display:flex;
+    flex-direction:column;
 }
 
 .inner-two, .inner-three{
@@ -124,14 +195,15 @@
 
 .roadmap-section {
     border : 2px solid black;
-    border-radius : 5px;
+    background-color: #fbec21;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, .5);
     width: 300px;
     max-height: 400px;
-    text-align:left;
-    padding-left: 5px;
-    padding-right:5px;
+    text-align:left;        
+    padding: 20px 40px 30px;
+    box-sizing: border-box;
     font-weight:500;
-    background-color: #FBEC21;
 }
 
 
@@ -152,7 +224,7 @@
 .roadmap-title {
     font-size: 1.5em;
     font-weight: 700;
-    font-family:cursive;
+    font-family:'Sans Comic Sans', sans-serif;
 }
 
 .roadmap-list {
@@ -165,25 +237,30 @@
 }
 
 .roadmap-list.tokenomics{
-    font-size: 1.3em;
+    font-size: 1.2em;
     overflow:hidden;
-
+    display:inline-block;
+    margin:0;
+    padding-left: 30px;
+    padding-right: 20px;
+    text-align: justify;
+    word-spacing: -.1em;
 }
 .title-two{
-    margin-bottom: 90px;
-    font-family:cursive;
+    margin-bottom: 20px;
+    font-family:'Sans Comic Sans', sans-serif;
 }
 .title-two, .title-three, .title-four{
     font-weight: 700;
     font-size: 1.8em;
-    margin-bottom: 90px;
-    font-family:cursive;
+    margin-bottom: 20px;
+    font-family:'Sans Comic Sans', sans-serif;
 }
 
 .buy-steps-container{
     width: 100%;
-    padding-left:30px;
-    padding-right:30px;
+    padding-left:160px;
+    padding-right:160px;
     box-sizing: border-box;
 }
 
@@ -193,7 +270,7 @@
     border-radius: 10px;
     box-shadow: 5px 2px 2px rgb(0, 0, 0, .5);
     border: 3px solid #555;
-    padding: 20px;
+    padding: 20px 40px 30px;
     box-sizing: border-box;
     text-align: left;
     margin-bottom:30px;
@@ -203,13 +280,17 @@
     font-weight:600;
     margin-bottom:10px;
     font-size:1.3em;
-    font-family:cursive;
+    font-family:'Sans Comic Sans', sans-serif;
+    word-spacing: -2px;
 }
 
 .step-body{
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-family: sans-serif;
+    text-align:justify;
+    word-spacing: -2px;
+    line-height:1.2em;
 }
 
 .token-snek-one {
@@ -235,36 +316,159 @@
 
 .roadmap-section.token{
     overflow:hidden;
+    padding: 20px 10px 30px;
+}
+.subtitle{
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 30px;
+    max-width:700px;
+    align-self: center;
+    font-weight:500;
 }
 
 
-@media screen and (max-width: 768px) {
-    .container{
-        height:auto;
-        padding-bottom:50px;
-    }
+
+
+
+.social-container{
+    display:flex;
+    flex-direction: row;
+    padding-right:20px;
+    height: 80px;
+    width:100%;
+    margin-left:120px;
+}
+.twitter-link{
+    display: inline-flex;
+}
+.twitter-container{
+    background-image: url('../img/twitter.png');
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:80px;
+    width:80px;
+    transition: all .2s ease-in-out;
+}
+
+.twitter-container:hover{
+    background-size:80%;
+    transition: all .2s ease-in-out;
+}
+
+.telegram-link{
+    display: inline-flex;
+}
+.telegram-container{
+    background-image: url('../img/telegram.png');
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:80px;
+    width:80px;
+    transition: all .2s ease-in-out;
+}
+
+.telegram-container:hover{
+    background-size:80%;
+    transition: all .2s ease-in-out;
+}
+
+.bscscan-link{
+    display: inline-flex;
+}
+.bscscan-container{
+    background-image: url('../img/etherscan.png');
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:80px;
+    width:80px;
+    transition: all .2s ease-in-out;
+}
+
+.bscscan-container:hover{
+    background-size:80%;
+    transition: all .2s ease-in-out;
+}
+
+
+.dextools-link{
+    display: inline-flex;
+}
+.dextools-container{
+    background-image: url('../img/dextools.png');
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:80px;
+    width:80px;
+    transition: all .2s ease-in-out;
+}
+
+.dextools-container:hover{
+    background-size:80%;
+    transition: all .2s ease-in-out;
+}
+
+
+@media screen and (max-width: 950px) {
+    
     .intro{
         padding-top:50px;
         flex-direction: column;
         height:auto;
     }
+    
+    .main-img{
+        margin-top:60px;
+        margin-bottom: 40px;
+        min-height:50%;
+    }
 
+    
     .text-container{
         padding-top:0px;
         text-align: center;
+        margin-right: 0px;
     }
 
     .text-container > .body {
         width:80%;
         font-family: sans-serif;
+        order: 3;
+    }
+
+    .text-container > .title {
+        order: 2;
     }
 
     .media-container{
-        height: 400px;
-        flex : 0 400px;
+        height: 350px;
+        flex : 0 1 350px;
+        margin-bottom:20px;
     }
 
+
+    .container{
+        height:auto;
+        padding-bottom:50px;
+    }
+
+    .social-container{
+        order: 4;
+        align-items: center;
+        justify-content: center;
+        margin:0;
+        padding:0;
+        margin-top:20px;
+    }
+
+    
     .container-two{
+        background-position: center;
+        margin-bottom:0px;
     }
 
     .inner-two{
@@ -286,22 +490,35 @@
         margin-right:5px;
         margin-left:5px;
         overflow:hidden;
+        padding-top: 5px;
+        padding-left: 0px;
+        padding-bottom: 10px;
     }
 
     .token-snek-one{
-        background-position: left;
-        background-size:contain;
+        background-position: right;
+        background-size:150%;
         background-repeat: no-repeat;
     }
 
     .token-snek-two{
-        background-position: right;
-        background-size:contain;
+        background-position: left;
+        background-size:170%;
         background-repeat: no-repeat;
 
     }
     
     .roadmap-list.tokenomics{
         font-size: 1em;
+        padding-left: 25px;
     }
+
+    .buy-steps-container{
+        padding-left:60px;
+        padding-right:60px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
 }

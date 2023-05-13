@@ -22,8 +22,11 @@ class HomePage extends Component {
                 <div className="intro">
                 <div className="media-container">
                     <div className="main-img"></div>
-                    <div className="main-btn">Buy on Polygon Soon!</div>
-                    <div className="second-btn">SnekNFT Marketplace In Progress!</div>
+                    <div className="main-btn">
+                        <div className="pancake-img"></div>
+                       <div className="btn-text">Buy on PancakeSwap Soon</div> 
+                        </div>
+                    <div className="second-btn">SnekNFT Marketplace In Progress</div>
                 </div>
                 <div className="text-container">
                     <div className="title">The Coin of Liberty and Prosperity</div>
@@ -32,12 +35,31 @@ class HomePage extends Component {
                     <br></br><br></br>
                     Just as the snake in the iconic "Don't Tread on Me" symbol represents a united stand against tyranny, the No Step On Snek ($SNEK) coin is designed to protect and grow your financial assets in a decentralized manner. We believe in the strength of the community and the potential for collective wealth creation.
                     <br></br><br></br>
-                    In our pursuit of fairness and equal opportunities for all, we are conducting a stealth launch of the $SNEK token. This approach ensures that everyone has a chance to be a part of the project from the very beginning, promoting inclusivity and transparency.
-                    <br></br><br></br>
-                    As part of our commitment to these values, we are creating the SnekNFT Marketplace, a platform for buying, selling, and trading exclusive, freedom-themed NFTs. This vibrant marketplace gives artists and collectors a space to express their passion for liberty and financial independence while contributing to the growth and success of the $SNEK community.
-                    <br></br><br></br>
                     Join us on this exciting journey towards financial independence and be a part of the $SNEK revolution! Together, we will make the No Step On Snek ($SNEK) coin and the SnekNFT Marketplace symbols of prosperity and freedom.
 
+                    </div>
+                    
+                    <div className="social-container">
+                        <a className="twitter-link" href="https://twitter.com/nosteponfinance" target="_blank">
+                            <div className="twitter-container">
+
+                            </div>
+                        </a>
+                        <a className ="telegram-link" href="https://t.me/nosteponsnekcoin" target="_blank">
+                            <div className="telegram-container">
+
+                            </div>
+                        </a>
+                        <a className ="bscscan-link" href="https://bscscan.com/" target="_blank">
+                            <div className="bscscan-container">
+
+                            </div>
+                        </a>
+                        <a className ="dextools-link" href="https://www.dextools.io/" target="_blank">
+                            <div className="dextools-container">
+
+                            </div>
+                        </a>
                     </div>
                 </div>
                 </div>
@@ -47,6 +69,9 @@ class HomePage extends Component {
             <div className="container-two">
                 <div className="title-two">
                     Road Map
+                </div>
+                <div className="subtitle">
+                As part of our commitment to these values, we are creating the SnekNFT Marketplace, a platform for buying, selling, and trading exclusive, freedom-themed NFTs. This vibrant marketplace will give artists and collectors a space to express their passion for liberty and financial independence while contributing to the growth and success of the $SNEK community.
                 </div>
                 <div className="inner-two">
                     <div className="roadmap-section one">
@@ -83,6 +108,9 @@ class HomePage extends Component {
             <div className="title-four">
                 How To Buy
             </div>
+                <div className="subtitle">
+                In our pursuit of fairness and equal opportunities for all, we are conducting a stealth launch of the $SNEK token. This approach ensures that everyone has a chance to be a part of the project from the very beginning, promoting inclusivity and transparency.
+                </div>
             <div className="buy-steps-container">
                 <div className="buy-step">
                     <div className="step-title">
@@ -105,7 +133,7 @@ class HomePage extends Component {
                         3. Connect to PancakeSwap
                     </div>
                     <div className="step-body">
-                    You can link up directly to PancakeSwap. We've embedded PancakeSwap right here to make things easier and get you straight to buying $SNEK. If you're using a different browser, just make sure you're on the official PancakeSwap site, select the token, and paste in the official $SNEK token address: ___.
+                    You can link up directly to PancakeSwap. If you're using a different browser, just make sure you're on the official PancakeSwap site, select the token, and paste in the official $SNEK token address: ___.
                     </div>
                 </div>
                 <div className="buy-step">
@@ -126,6 +154,9 @@ class HomePage extends Component {
         <div className="container-three">
                 <div className="title-three">
                     Tokenomics
+                </div>
+                <div className="subtitle">
+                Get ready to strike at an opportunity that's shedding the usual constraints! $SNEK is slithering a unique path, embracing a tokenomics structure that champions fairness and future growth. With no taxes and a commitment to liquidity, we're setting the stage for an exciting journey into the wilderness of financial freedom. Read on, and find out why $SNEK is the choice for the daring and independent!
                 </div>
                 <div className="inner-three">
                     <div className="token-snek-one"></div>

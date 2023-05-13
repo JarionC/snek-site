@@ -19,7 +19,7 @@ class BottomBar extends Component {
     return (
       <div className="bottom-container">
         <div className="bottom-text">
-        © 2023 by No Step On Snek. All rights reserved!</div>
+        © 2023 by No Step On Snek Coin. All rights ressserved.</div>
       </div>
     );
   }

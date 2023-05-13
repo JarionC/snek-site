@@ -21,18 +21,6 @@ class NavBar extends Component {
         <div className="logo-container">
             <div className="logo-box"></div>
         </div>
-        <div className="social-container">
-            <a className="twitter-link" href="https://twitter.com/nosteponfinance" target="_blank">
-                <div className="twitter-container">
-
-                </div>
-            </a>
-            <a className ="telegram-link" href="https://t.me/nosteponsnekcoin" target="_blank">
-                <div className="telegram-container">
-
-                </div>
-            </a>
-        </div>
       </div>
     );
   }
