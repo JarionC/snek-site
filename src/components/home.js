@@ -162,11 +162,10 @@ class HomePage extends Component {
                     <div className="token-snek-one"></div>
                     <div className="roadmap-section token">
                         <ul className="roadmap-list tokenomics">
-                            <li className="roadmap-list-item">No Taxes - Need we say more?</li>
-                            <li className="roadmap-list-item">92% of tokens will be sent to liquidity.</li>
-                            <li className="roadmap-list-item">8% of tokens will be held in a multi-sig wallet to be used for future CEX exchange listings, bridges, and liquidity pools.</li>
+                            <li className="roadmap-list-item">No Taxes. Period.</li>
+                            <li className="roadmap-list-item">92% of tokens sent to liquidity.</li>
+                            <li className="roadmap-list-item">8% of tokens for CEX exchange listings, bridges.</li>
                             <li className="roadmap-list-item">LP tokens will be burned.</li>
-                            <li className="roadmap-list-item">Contract will be renounced.</li>
                         </ul>
                     </div>
                     <div className="token-snek-two"></div>
