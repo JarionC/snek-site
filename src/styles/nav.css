@@ -1,10 +1,10 @@
-.nav-container{
-    position:fixed;
-    top: 0px;
-    height:80px;
-    display:flex;
-    flex-direction:row;
-    width:100%;
+.nav-container {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     background-color: #FFFF00;
 }
 
@@ -12,70 +12,37 @@
     border-radius: 100%;
     border: 2px solid black;
     background-image: url('../img/snek_alone_1.png');
-    background-size: 70%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     height: 60px;
     width: 60px;
-    animation: enter-bounce 0.5s ease-in-out, rotate 4s infinite linear;
-    animation-fill-mode: both;
+    animation: rotate 4s infinite linear;
+    animation-fill-mode:both;
     transform: translateY(-100%);
+    transform-origin: center;
+    -webkit-animation: rotate 4s infinite linear;
+    -webkit-animation-fill-mode: both;
+    -webkit-transform: translateY(-50%);
+    -webkit-transform-origin: center;
     position: relative;
-    overflow: hidden;
+    top: 0;
+    left: 0;
+    overflow: visible;
 }
 
-@keyframes enter-bounce {
-    0% {
-        transform: translateY(-100%);
-    }
-    60% {
-        transform: translateY(0);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    80% {
-        transform: translateY(-20px);
-        animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
 
 @keyframes rotate {
     0% {
         transform: rotateY(0);
+        -webkit-transform: rotateY(0);
     }
     100% {
         transform: rotateY(1turn);
+        -webkit-transform: rotateY(1turn);
     }
 }
 
-.logo-box::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        to bottom right,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0.4),
-        rgba(255, 255, 255, 0)
-    );
-    opacity: 0.5;
-    transform: rotateZ(-45deg) translate(-20%);
-    animation: glimmer 4s infinite linear;
-}
-
-@keyframes glimmer {
-    0% {
-        transform: rotateZ(-45deg) translate(-20%);
-    }
-    100% {
-        transform: rotateZ(315deg) translate(-20%);
-    }
-}
 
 .logo-container {
     margin-right: auto;
@@ -84,4 +51,5 @@
     padding-bottom: 2px;
     display: flex;
     align-items: center;
+    overflow:hidden;
 }

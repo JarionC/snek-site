@@ -33,11 +33,15 @@ class HomePage extends Component {
                     <div className="body">
                     Welcome to the No Step On Snek ($SNEK) community! Our meme coin is built on the values of financial freedom, liberty, and the power of decentralized finance. Our mission is to empower individuals with a digital asset that represents the spirit of independence and resilience.
                     <br></br><br></br>
-                    Just as the snake in the iconic "Don't Tread on Me" symbol represents a united stand against tyranny, the No Step On Snek ($SNEK) coin is designed to protect and grow your financial assets in a decentralized manner. We believe in the strength of the community and the potential for collective wealth creation.
+
+                    </div>
+
+                        <div className="body two">
+                        Just as the snake in the iconic "Don't Tread on Me" symbol represents a united stand against tyranny, the No Step On Snek ($SNEK) coin is designed to protect and grow your financial assets in a decentralized manner. We believe in the strength of the community and the potential for collective wealth creation.
                     <br></br><br></br>
                     Join us on this exciting journey towards financial independence and be a part of the $SNEK revolution! Together, we will make the No Step On Snek ($SNEK) coin and the SnekNFT Marketplace symbols of prosperity and freedom.
 
-                    </div>
+                        </div>
                     
                     <div className="social-container">
                         <a className="twitter-link" href="https://twitter.com/nosteponfinance" target="_blank">
@@ -169,6 +173,13 @@ class HomePage extends Component {
                         </ul>
                     </div>
                     <div className="token-snek-two"></div>
+            </div>
+        </div>
+        <div className="container-disclaimer">
+            <div className="roadmap-section disclaimer" >
+                $SNEK coin has no affiliation with any specific entity or organization that may be associated with the "No Step On Snek" meme. This token is simply a tribute to a meme that resonates with our passion for financial freedom and autonomy.
+                <br></br><br></br>
+                $SNEK is a meme coin with no inherent value or promises of financial return. It does not have a formal team or a set roadmap. It's meant to be a token of independence and self-reliance in the crypto world, but in essence, it's a token created for amusement and community spirit. Use it wisely, responsibly, and always remember: No step on $SNEK!
             </div>
         </div>
       </div>
