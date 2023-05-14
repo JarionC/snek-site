@@ -12,7 +12,7 @@
     border-radius: 100%;
     border: 2px solid black;
     background-image: url('../img/snek_alone_1.png');
-    background-size: cover;
+    background-size: 70%;
     background-repeat: no-repeat;
     background-position: center center;
     height: 60px;
